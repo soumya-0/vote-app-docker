@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Voting App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h5>This is a simple web page</h5>
+    <div class="container">
+        <h1>Voting App</h1>
+        <div>
+            <button id="dog-btn" onclick="vote('dog')">Dog</button>
+            <button id="cat-btn" onclick="vote('cat')">Cat</button>
+            <button id="goldfish-btn" onclick="vote('goldfish')">Goldfish</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="vote-chart" width="200" height="200"></canvas>
+        </div>
+        <div id="vote-count"></div>
+    </div>
+    <div id="vote-count"></div>
+    <div id="grade"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
